@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+
+:root {
+  --salmon: #ff8080;
+  --pink-lighter: #f8bbd0;
+  --pink: #ffcccc;
+  --white-pink: #ffe6e6;
+  --pink-mid: #f48fb1;
+  --pink-darker:#f06292;
+  --red: #ff0000;
+  --fucsia:#d81b60;
+  --fucsia-lighter:#ec407a;
+  --black: #000;
+  --yellow: rgb(248, 175, 6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  margin: 0;
+  font-family: monospace;
+  font-size: 16px;
+  background-color: var(--pink-lighter);
+}
+
+
+nav {
+  background: var(--pink-lighter);
+  flex: 1;
+  width: auto;
+  display: flex;
+  color: var(--black);
+}
+
+
+.nav-col {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  color: var(--white-pink);
+  text-align: center;
+  background-color: var(--salmon);
+  border-radius: 10px;
+}
+
+.content>article {
+  flex: 3;
+  min-height: 60vh;
+}
+
+.content>aside {
+  background: var(--pink-lighter);
+  flex: 1;
+}
+
+header,
+footer {
+  background: var(--pink);
+  height: 20vh;
+}
+
+header {
+  border-radius: 10px;
+  background: var(--pink);
+  height: 20vh;
+  color: var(--black);
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+  padding: 1em;
+  color: var(--black);
+}
+
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--pink-lighter);
+  border-radius: 10px;
+}
+
+
